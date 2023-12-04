@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #674ab0 ;
+
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.container{
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  font-size: 16px;
+}
+
+.logo-container{
+  padding: 40px 30px 50px;
+}
+
+.logo{
+  width: 110px;
+}
+
+main{
+  padding: 0 30px 10px ;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-illustration{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  font-size: clamp(14px, 2em, 24px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.huddle-text{
+  font-size: clamp(14px, 0.93em, 26px);
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 93%);
+}
+
+.register-btn{
+  border: none;
+  border-radius: 30px;
+  padding: 9px 60px;
+  color: hsl(257, 40%, 49%);
+  font-size: clamp(14px, 0.7em, 20px);
+  margin: 10px 0 50px;
+  cursor: pointer;
+}
+.register-btn:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: hsl(0, 0%, 97%);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.fa-brands{
+  margin: 0 5px 20px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.fa-brands:hover{
+  border-color: hsl(300, 69%, 61%);
+  color: hsl(300, 69%, 61%);
+  cursor: pointer;
+}
+
+.fa-facebook-f{
+  padding: 8px 10px;
+}
+
+.fa-twitter{
+  padding: 8px;
+}
+
+.fa-instagram{
+  padding: 8px 9px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #fff; 
+}
+
+@media (min-width:375px) and (max-width:469.99px){
+  body{
+    background-size: 500px;
+  }
+}
+
+@media (min-width:470px) and (max-width:699.99px){
+  body{
+    background-size: 700px;
+  }
+  h1{
+    padding: 0 50px;
+  }
+}
+
+@media (min-width:700px) and (max-width:899.99px){
+  body{
+    background-size: 900px 700px;
+  }
+  h1{
+    padding: 0 100px;
+  }
+  .huddle-text{
+    padding: 0 80px;
+  }
+}
+
+@media (min-width:900px) and (max-width:999.99px){
+  body{
+    background-size: 1000px;
+  }
+  .huddle-text{
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-position-x: -30px;
+    background-position-y: -20px;
+  }
+
+  .container{
+    padding: 10px 40px;
+  }
+
+  .logo{
+    width: 180px;
+  }
+
+  .main{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-left{
+    width: 50%;
+  }
+
+  .main-right{
+    width: 45%;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1{
+    text-align: left;
+    font-size: 2.3em;
+    line-height: 1.5em;
+  }
+
+  .huddle-text{
+    text-align: left;
+    font-size: 0.95em;
+    padding-right: 20px;
+  }
+
+  .register-btn{
+    padding: 12px 50px;
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  .socials{
+    justify-content: flex-end;
+  }
+
+  .fa-brands{
+    margin: 0 8px 20px;
+    font-size: 15px;
+  }
+
+  .fa-facebook-f{
+    padding: 9.5px 12px;
+  }
+  
+  .fa-twitter{
+    padding: 9.5px 10px;
+  }
+  
+  .fa-instagram{
+    padding: 9.5px 11px;
+  }
+  
+}
